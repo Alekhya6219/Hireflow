@@ -10,7 +10,7 @@ import {
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
 
-import companyLogos from "../../utils/companyLogos";
+import companyLogos from "../../utils/CompanyLogos";
 
 function CompanyCard({ company }) {
   return (

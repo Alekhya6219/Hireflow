@@ -22,7 +22,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ApplicationDialog from "../components/jobs/ApplicationDialog";
-import companyLogos from "../utils/companyLogos";
+import companyLogos from "../utils/CompanyLogos";
 
 function JobDetails() {
   const [open, setOpen] = useState(false);
