@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Bookmark } from "lucide-react";
 
-import Logo from "./Logo";
+import Logo from "./logo";
 import Container from "../ui/Container";
 import { navigation } from "../../constants/navigation";
 

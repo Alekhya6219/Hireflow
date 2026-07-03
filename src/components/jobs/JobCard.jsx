@@ -22,7 +22,7 @@ import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import useSavedJobs from "../../hooks/useSavedJobs";
-import companyLogos from "../../utils/companyLogos";
+import companyLogos from "../../utils/CompanyLogos";
 import ApplicationDialog from "./ApplicationDialog";
 
 const badgeStyles = {
