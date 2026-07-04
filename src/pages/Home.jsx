@@ -21,26 +21,27 @@ import ApartmentRoundedIcon from "@mui/icons-material/ApartmentRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import BoltRoundedIcon from "@mui/icons-material/BoltRounded";
 
-import googleLogo from "../assets/logos/google.svg";
-import microsoftLogo from "../assets/logos/microsoft.svg";
-import amazonLogo from "../assets/logos/amazon.svg";
-import adobeLogo from "../assets/logos/adobe.svg";
-import netflixLogo from "../assets/logos/netflix.svg";
-import ibmLogo from "../assets/logos/ibm.svg";
-import infosysLogo from "../assets/logos/infosys.svg";
-import tcsLogo from "../assets/logos/tcs.svg";
-import accentureLogo from "../assets/logos/accenture.svg";
+import google from "../assets/logos/google.svg";
+import microsoft from "../assets/logos/microsoft.svg";
+import amazon from "../assets/logos/amazon.svg";
+import adobe from "../assets/logos/adobe.svg";
+import netflix from "../assets/logos/netflix.svg";
+import ibm from "../assets/logos/ibm.svg";
+import infosys from "../assets/logos/infosys.svg";
+import tcs from "../assets/logos/tcs.svg";
+import accenture from "../assets/logos/accenture.svg";
+
 
 const companies = [
-  googleLogo,
-  microsoftLogo,
-  amazonLogo,
-  adobeLogo,
-  netflixLogo,
-  ibmLogo,
-  infosysLogo,
-  tcsLogo,
-  accentureLogo,
+  google,
+  microsoft,
+  amazon,
+  adobe,
+  netflix,
+  ibm,
+  infosys,
+  tcs,
+  accenture,
 ];
 
 const stats = [
@@ -217,8 +218,8 @@ function Home() {
   direction={{ xs: "column", sm: "row" }}
   spacing={3}
   sx={{
-    mt: 5,          // space above the buttons
-    ml: { md: 4 },  // move buttons slightly to the right on desktop
+    mt: 5,    
+    ml: { md: 4 },
     justifyContent: "center",
     alignItems: "center",
   }}

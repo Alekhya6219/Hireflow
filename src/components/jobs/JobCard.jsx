@@ -67,6 +67,7 @@ const isSaved = savedJobs.includes(job.id);
   return (
     <Card
       sx={{
+        position: "relative",
         height: "100%",
         display: "flex",
         flexDirection: "column",
@@ -88,74 +89,82 @@ const isSaved = savedJobs.includes(job.id);
           p: 4,
         }}
       >
-        {/* Header */}
+       
 
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Box
-            sx={{
-              width: 60,
-              height: 60,
-              borderRadius: "16px",
-              border: "1px solid #E5E7EB",
-              bgcolor: "#fff",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              overflow: "hidden",
-            }}
-          >
-            <img
-              src={companyLogos[job.company]}
-              alt={job.company}
-              style={{
-                maxWidth: "72%",
-                maxHeight: "72%",
-                objectFit: "contain",
-              }}
-            />
-          </Box>
+
+
+<Stack
+  direction="row"
+  justifyContent="space-between"
+  alignItems="flex-start"
+>
+
+
+  <Box
+    sx={{
+      width: 60,
+      height: 60,
+      borderRadius: "16px",
+      border: "1px solid #E5E7EB",
+      bgcolor: "#fff",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      overflow: "hidden",
+      flexShrink: 0,
+    }}
+  >
+    <img
+      src={companyLogos[job.company]}
+      alt={job.company}
+      style={{
+        width: "75%",
+        height: "75%",
+        objectFit: "contain",
+        display: "block",
+      }}
+      onError={(e) => {
+        e.target.style.display = "none";
+      }}
+    />
+  </Box>
 
   <IconButton
-  onClick={(e) => {
-    e.stopPropagation();
-    toggleSave(job.id);
-  }}
-  disableRipple
-  sx={{
-    ml: 35, 
-    p: 0,
-    bgcolor: "transparent",
-    border: "none",
-    boxShadow: "none",
-
-    "&:hover": {
+    onClick={(e) => {
+      e.stopPropagation();
+      toggleSave(job.id);
+    }}
+    disableRipple
+    sx={{
+      position: "absolute",
+      top: 24,
+      right: 24,
+      p: 0,
       bgcolor: "transparent",
-    },
-  }}
->
-  {isSaved ? (
-    <FavoriteIcon
-      sx={{
-        color: "#EF4444",
-        fontSize: 30,
-      }}
-    />
-  ) : (
-    <FavoriteBorderIcon
-      sx={{
-        color: "#94A3B8",
-        fontSize: 30,
-      }}
-    />
-  )}
-</IconButton>
-        </Stack>
 
-        {/* Badge */}
+      "&:hover": {
+        bgcolor: "transparent",
+      },
+    }}
+  >
+    {isSaved ? (
+      <FavoriteIcon
+        sx={{
+          color: "#EF4444",
+          fontSize: 30,
+        }}
+      />
+    ) : (
+      <FavoriteBorderIcon
+        sx={{
+          color: "#94A3B8",
+          fontSize: 30,
+        }}
+      />
+    )}
+  </IconButton>
+</Stack>
+
 
         {job.badge && (
           <Chip

@@ -1,16 +1,218 @@
-# React + Vite
+# HireFlow - AI Assisted Job Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern AI-assisted Job Board built using React, Material UI, and Vite. HireFlow provides a clean and responsive interface for discovering job opportunities, exploring companies, saving favorite jobs, and viewing detailed job information.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+Deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://hireflow-git-main-alekhya6219.vercel.app/
 
-## Expanding the ESLint configuration
+## GitHub Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://github.com/Alekhya6219/Hireflow
+
+---
+
+## Features
+
+- Modern and responsive landing page
+- Browse available job opportunities
+- Job Details page with complete job information
+- Companies page
+- About page
+- Save Jobs functionality using Local Storage
+- Search and filter jobs
+- Apply Now demo dialog
+- Login & Signup placeholder pages
+- Trusted Hiring Partners section
+- Testimonials section
+- Responsive design for desktop, tablet, and mobile
+- GitHub Actions Continuous Integration
+- Vercel Deployment
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React
+- JavaScript (ES6+)
+- React Router DOM
+- Material UI (MUI)
+- CSS
+
+### Build Tool
+
+- Vite
+
+### Version Control
+
+- Git
+- GitHub
+
+### Deployment
+
+- Vercel
+
+### CI/CD
+
+- GitHub Actions
+
+---
+
+## Project Structure
+
+```
+Hireflow/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── constants/
+│   ├── context/
+│   ├── data/
+│   ├── hooks/
+│   ├── pages/
+│   ├── services/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Alekhya6219/Hireflow.git
+```
+
+Go to the project
+
+```bash
+cd Hireflow
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+## GitHub Actions (CI)
+
+A GitHub Actions workflow is configured to automatically:
+
+- Install dependencies
+- Build the project
+- Validate production build
+
+The workflow runs automatically whenever code is pushed to the **main** branch.
+
+---
+
+## Deployment
+
+The application is deployed using **Vercel**.
+
+Every production deployment is generated from the latest version of the **main** branch.
+
+---
+
+## Application Pages
+
+- Home
+- Jobs
+- Job Details
+- Companies
+- About
+- Saved Jobs
+- Login (Placeholder)
+- Signup (Placeholder)
+- 404 Not Found
+
+---
+
+## Highlights
+
+- Clean and modern UI
+- Responsive design
+- Reusable React components
+- Material UI components
+- Local Storage for saved jobs
+- Interactive Apply dialog
+- Company logo integration
+- Professional landing page
+- Optimized project structure
+
+---
+
+## Future Enhancements
+
+- User Authentication
+- Backend Integration
+- Database Support
+- Resume Upload
+- Recruiter Dashboard
+- AI Job Recommendations
+- Email Notifications
+- Job Application Tracking
+
+---
+
+## AI Usage
+
+AI was used during development to assist with:
+
+- UI/UX improvements
+- React component generation
+- Responsive layout refinement
+- GitHub Actions workflow creation
+- Documentation generation
+- Code optimization
+
+All generated code was reviewed, customized, integrated, tested, and verified before deployment.
+
+---
+
+## Author
+
+**Alekhya Vadapally**
+
+Software Engineer | React Developer | Java Full Stack Developer
+
+GitHub:
+https://github.com/Alekhya6219
+
+---
+
+## License
+
+This project was created as part of a Software Engineer technical assessment.
